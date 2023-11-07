@@ -1,0 +1,30 @@
+{
+  "name": "you-desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "build-linux": "electron-builder --linux deb",
+    "build-win": "electron-builder --windows"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Night Angel",
+    "email": "niang610@outlook.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.0.3",
+    "electron-builder": "^24.6.4"
+  },
+  "dependencies": {
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "linux": {
+      "maintainer": "Night Angel <niang610@outlook.com>"
+    }
+  },
+  "homepage": "https://you.com"
+}
