@@ -38,6 +38,7 @@ function createWindow() {
   });
 
   mainWindow.loadURL("https://you.com");
+  mainWindow.setVisibleOnAllWorkspaces(true);
 
   mainWindow.on("blur", () => {
     mainWindow.hide();
@@ -65,6 +66,7 @@ function createWindow() {
     },
     resizable: false,
   });
+  floatingButton.setVisibleOnAllWorkspaces(true);
 
   floatingButton.loadURL(
     url.format({
